@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E2DA9EEC-469F-4534-BC7E-E4102039A690}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Flip_Cards_Game</RootNamespace>
+    <AssemblyName>Flip Cards Game</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnimalsCradsForms\frmAnimalsHard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnimalsCradsForms\frmAnimalsHard.Designer.cs">
+      <DependentUpon>frmAnimalsHard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnimalsCradsForms\frmAnimalsMedium.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnimalsCradsForms\frmAnimalsMedium.Designer.cs">
+      <DependentUpon>frmAnimalsMedium.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnimalsCradsForms\frmAnimalsEasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnimalsCradsForms\frmAnimalsEasy.Designer.cs">
+      <DependentUpon>frmAnimalsEasy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FruitsCardsForms\frmFruitsEasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FruitsCardsForms\frmFruitsEasy.Designer.cs">
+      <DependentUpon>frmFruitsEasy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FruitsCardsForms\frmFruitsHard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FruitsCardsForms\frmFruitsHard.Designer.cs">
+      <DependentUpon>frmFruitsHard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FruitsCardsForms\frmFruitsMedium.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FruitsCardsForms\frmFruitsMedium.Designer.cs">
+      <DependentUpon>frmFruitsMedium.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmParentScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParentScreen.Designer.cs">
+      <DependentUpon>frmParentScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AnimalsCradsForms\frmAnimalsHard.resx">
+      <DependentUpon>frmAnimalsHard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimalsCradsForms\frmAnimalsMedium.resx">
+      <DependentUpon>frmAnimalsMedium.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnimalsCradsForms\frmAnimalsEasy.resx">
+      <DependentUpon>frmAnimalsEasy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FruitsCardsForms\frmFruitsEasy.resx">
+      <DependentUpon>frmFruitsEasy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FruitsCardsForms\frmFruitsHard.resx">
+      <DependentUpon>frmFruitsHard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FruitsCardsForms\frmFruitsMedium.resx">
+      <DependentUpon>frmFruitsMedium.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmParentScreen.resx">
+      <DependentUpon>frmParentScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rooster.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cow.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Panda.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dog.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bird.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Frog.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Squirrel.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Animal selvagem dos desenhos animados com tabuleta em branco _ Vetor Premium.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monkey.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fox.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Owl.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cheep.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Elephent.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mouse.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Turtle.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lion.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuestionMark.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAnimals.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnFruits.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8972583.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apple.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FruitsQuestionMark.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Orange.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pomegranate.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Papaya.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kiwi.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Peach.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cherry.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Raspberry.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blueberry.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Watermelon.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pineapple.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grape.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mango.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Strawberry.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banana.jpeg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
